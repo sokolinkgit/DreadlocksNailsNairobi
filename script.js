@@ -1,5 +1,5 @@
 /**
- * DreadlocksNailsNairobi - Masterpiece Interactive Script
+ * Sisterlocks Nails Art Salon - Masterpiece Interactive Script
  * High Converting Features: Before/After Sliders, Custom Calculator,
  * WhatsApp Link Generators, FAQ Accordion, Social Proof Notifications
  */
@@ -232,7 +232,7 @@ document.addEventListener('DOMContentLoaded', () => {
     totalAmountElem.textContent = `KSh ${finalTotal.toLocaleString()}`;
 
     // Build Custom WhatsApp Booking URL
-    let waMessage = `Hello DreadlocksNailsNairobi! I'd like to book my custom glam package:\n`;
+    let waMessage = `Hello Sisterlocks Nails Art Salon! I'd like to book my custom glam package:\n`;
     if (hasDreads) waMessage += `• Dreadlocks: ${dreadName} (KSh ${dreadPrice.toLocaleString()})\n`;
     if (hasNails) waMessage += `• Nails: ${nailName} (KSh ${nailPrice.toLocaleString()})\n`;
     if (addonsList.length > 0) {
@@ -244,7 +244,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (comboDiscount > 0) {
       waMessage += `• Special Combo Discount: -KSh 500\n`;
     }
-    waMessage += `\n*Estimated Total: KSh ${finalTotal.toLocaleString()}*\n\nPlease let me know your earliest available dates and studio/home visit slots!`;
+    waMessage += `\n*Estimated Total: KSh ${finalTotal.toLocaleString()}*\n\nPlease let me know your earliest available studio dates and chair times!`;
 
     const encodedWa = encodeURIComponent(waMessage);
     bookCustomBtn.href = `https://wa.me/254792216265?text=${encodedWa}`;
@@ -322,7 +322,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const name = document.getElementById('clientName').value.trim();
       const phone = document.getElementById('clientPhone').value.trim();
       const service = document.getElementById('serviceCategory').value;
-      const location = document.getElementById('locationType').value;
       const date = document.getElementById('bookingDate').value;
       const time = document.getElementById('bookingTime').value;
       const notes = document.getElementById('clientNotes').value.trim();
@@ -332,11 +331,11 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      let msg = `🌟 *NEW BOOKING REQUEST - DreadlocksNailsNairobi* 🌟\n\n`;
+      let msg = `🌟 *NEW BOOKING REQUEST - Sisterlocks Nails Art Salon* 🌟\n\n`;
       msg += `👤 *Client Name:* ${name}\n`;
       msg += `📞 *Phone / WhatsApp:* ${phone}\n`;
       msg += `✂️ *Selected Service:* ${service}\n`;
-      msg += `📍 *Service Location:* ${location}\n`;
+      msg += `📍 *Service Location:* In-Studio at our Central Nairobi salon\n`;
       msg += `📅 *Preferred Date:* ${date}\n`;
       msg += `⏰ *Preferred Time:* ${time}\n`;
       if (notes) {
@@ -414,7 +413,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const recentBookings = [
     { name: 'Sharon from Kilimani', action: 'just booked Loc Retwist + BIAB Nails!', time: '3 minutes ago' },
     { name: 'Brian from Westlands', action: 'just booked Loc Repair & Scalp Detox!', time: '7 minutes ago' },
-    { name: 'Faith from Kileleshwa', action: 'just booked VIP Home Service (Locs + Nails)!', time: '12 minutes ago' },
+    { name: 'Faith from Kileleshwa', action: 'just booked The Nairobi Royalty Package!', time: '12 minutes ago' },
     { name: 'Kevin from Roysambu', action: 'just booked Starter Locs Installation!', time: '18 minutes ago' },
     { name: 'Mercy from Ngong Road', action: 'just booked Sculpted Almond Acrylics!', time: '24 minutes ago' },
     { name: 'Dennis from South C', action: 'just booked The Executive Glow-Up Combo!', time: '31 minutes ago' },
